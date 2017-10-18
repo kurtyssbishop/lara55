@@ -1,0 +1,50 @@
+// Body
+$body-bg: #f5f8fa;
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+// Brands
+$brand-primary: #3097D1;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger: #bf5329;
+// Typography
+$icon-font-path: "node_modules/bootstrap/scss/fonts";
+$font-family-sans-serif: "Raleway",
+sans-serif;
+$font-size-base: 18px;
+$line-height-base: 1.4;
+$text-color: #636b6f;
+// Navbar
+$navbar-default-bg: #fff;
+// Buttons
+$btn-default-color: $text-color;
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+// Panels
+$panel-default-heading-bg: #fff;
+//presets
+$mediaDeskTop: 1260px;
+$mediaTablet: 768px;
+$mediaPhone: 480px;
+$theme-color:#000000;
+$purple:#6A3F84;
+$gold: #d0ae5e;
+$font-section-header:"Roboto Slab";
+$font-header: "Roboto Slab";
+$font-section-subheader:"Open Sans";
+$font-header-subheader:"Open Sans";
+$font-narrow: "Oswald";
+$font-body:"Open Sans";
+$font-cursive:"Dancing Script";
+$text-normal-size:18px;
+$heading-font:$font-section-header;
+$secondary-font:$font-section-subheader;
+//mixins
+@import "mymixins.scss";

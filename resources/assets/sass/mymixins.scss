@@ -1,0 +1,34 @@
+@mixin mixin-equilateral-triangle($direction, $size, $color) {
+    width: 0;
+    height: 0;
+    @if $direction=='up' {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-bottom: $size solid $color;
+    }
+    @else if $direction=='down' {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-top: $size solid $color;
+    }
+    @else if $direction=='right' {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-left: $size solid $color;
+    }
+    @else if $direction=='left' {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-right: $size solid $color;
+    }
+}
+
+@mixin mixin-center-btn {
+    display: block;
+    margin: auto auto;
+    width: 185px;
+}
+
+@mixin transition-hover {
+    transition: color .5s .2s ease;
+}

@@ -1,0 +1,85 @@
+@mixin mixin-fixed-image {
+    position: relative;
+    width: 100% !important;
+    margin: auto auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    padding: 175px 0px;
+}
+
+@mixin mixin-font-banner {
+    font-family: $font-header;
+    line-height: 1.1;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+@mixin mixin-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(110, 88, 182, 0.23);
+}
+
+@media (min-width:$mediaPhone) {
+    .section-herotext {
+        h1 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.75em;
+        }
+    }
+}
+
+@media (min-width:$mediaTablet) {
+    .section-herotext {
+        h1 {
+            font-size: 3.5em;
+        }
+        p {
+            font-size: 2em;
+        }
+    }
+}
+
+@media screen and (min-width: $mediaDeskTop) {
+    .section-herotext {
+        h1 {
+            font-size: 4em;
+        }
+        p {
+            font-size: 2.5em;
+        }
+    }
+}
+
+.section-herotext {
+    @include mixin-fixed-image;
+    .heroimage {
+        top: 0;
+        position: absolute;
+    }
+    .coversection {
+        @include mixin-overlay;
+    }
+    h1 {
+        @include mixin-font-banner;
+        color: white;
+    }
+    p {
+        color: white;
+        line-height: 1.1em;
+        margin: 30px auto;
+        text-align: center;
+    }
+    a {
+        @include mixin-center-btn;
+        width: 225px;
+    }
+}

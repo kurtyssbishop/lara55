@@ -1,0 +1,22 @@
+ // Fonts
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald:400,500|Roboto+Slab&subset=latin-ext');
+ /* Font Awesome
+$fa-font-path: "../fonts";
+@import "node_modules/font-awesome/scss/font-awesome";
+
+
+// Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+*/
+ 
+ // Variables
+ @import "variables";
+ //mixins
+ @import "mymixins.scss";
+ // forms css
+ @import "../css/gridforms.css";
+ @import "../css/parsley.css";
+ @import "menu";
+ @import "scroll-to-top";
+ @import "fixedheader";
